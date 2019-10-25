@@ -7,14 +7,14 @@
 # SDK LIBRARY
 # -----------
 LIB_NAME = SENSIT_SDK_V2.0.0
-LIB_PATH = lib
+LIB_PATH = C:/Users/lecom/IoT/hei-2019-2020-lab-sens-it-larghero-lecomte/sensit-sdk-v2.0.0/sdk/lib
 
 
 # --------------
 # OUTPUT FOLDERS
 # --------------
-BIN_PATH = bin
-OBJ_PATH = obj
+BIN_PATH = C:/Users/lecom/IoT/hei-2019-2020-lab-sens-it-larghero-lecomte/sensit-sdk-v2.0.0/sdk/bin
+OBJ_PATH = C:/Users/lecom/IoT/hei-2019-2020-lab-sens-it-larghero-lecomte/sensit-sdk-v2.0.0/sdk/obj
 
 
 # ------------
@@ -189,5 +189,5 @@ dir:
 	@echo ' '
 
 # Rule for USB flashing using dfu file manager (vendor id 0483)
-prog:
+prog: C:/Users/lecom/IoT/dfu-util-0.9-win64/dfu-util.exe
 	dfu-util -a 0 -s 0x08000000:leave -D $(BIN_PATH)/$(BIN_OUTPUT)
