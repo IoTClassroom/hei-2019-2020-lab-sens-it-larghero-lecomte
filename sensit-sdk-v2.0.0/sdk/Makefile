@@ -189,5 +189,6 @@ dir:
 	@echo ' '
 
 # Rule for USB flashing using dfu file manager (vendor id 0483)
-prog: C:/Users/lecom/IoT/dfu-util-0.9-win64/dfu-util.exe
-	dfu-util -a 0 -s 0x08000000:leave -D $(BIN_PATH)/$(BIN_OUTPUT)
+prog: 
+	"/c/Users/lecom/IoT/dfu-util-0.9-win64/dfu-util.exe"  -a 0 -s 0x08000000:leave -D "C:/Users/lecom/IoT/hei-2019-2020-lab-sens-it-larghero-lecomte/sensit-sdk-v2.0.0/sdk/bin/sensit.bin"
+
