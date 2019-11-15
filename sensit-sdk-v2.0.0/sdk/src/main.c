@@ -90,6 +90,9 @@ int main()
             {
                 /* Set button flag */
                 data.button = TRUE;
+                
+                /* Set message */
+                //payload = "warn";
 
                 /* Set send flag */
                 send = TRUE;
@@ -136,7 +139,7 @@ int main()
             DISCOVERY_build_payload(&payload, MODE_VIBRATION, &data);
 
             /* Send the message */
-            err = RADIO_API_send_message(RGB_BLUE, (u8*)&payload, DISCOVERY_PAYLOAD_SIZE, FALSE, NULL);
+            err = RADIO_API_send_message(RGB_BLUE, (u8*)"WR", DISCOVERY_PAYLOAD_SIZE, FALSE, NULL);
             /* Parse the error code */
             ERROR_parser(err);
 
