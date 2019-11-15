@@ -1,11 +1,10 @@
 /*!******************************************************************
- * \file main.c
- * \brief Sens'it SDK template
+ * \file main_VIBRATION.c
+ * \brief Sens'it Discovery mode Vibration demonstration code
  * \author Sens'it Team
  * \copyright Copyright (c) 2018 Sigfox, All Rights Reserved.
  *
- * This file is an empty main template.
- * You can use it as a basis to develop your own firmware.
+ * For more information on this firmware, see vibration.md.
  *******************************************************************/
 /******* INCLUDES **************************************************/
 #include "sensit_types.h"
@@ -20,7 +19,7 @@
 
 /******** DEFINES **************************************************/
 #define VIBRATION_THRESHOLD                0x10 /* With 2g range, 3,9 mg threshold */
-#define VIBRATION_COUNT                    1
+#define VIBRATION_COUNT                    2
 
 
 /******* GLOBAL VARIABLES ******************************************/
@@ -90,9 +89,6 @@ int main()
             {
                 /* Set button flag */
                 data.button = TRUE;
-                
-                /* Set message */
-                //payload = "warn";
 
                 /* Set send flag */
                 send = TRUE;
@@ -139,7 +135,7 @@ int main()
             DISCOVERY_build_payload(&payload, MODE_VIBRATION, &data);
 
             /* Send the message */
-            err = RADIO_API_send_message(RGB_BLUE, (u8*)"WR", DISCOVERY_PAYLOAD_SIZE, FALSE, NULL);
+            err = RADIO_API_send_message(RGB_BLUE, (u8*)"warn", DISCOVERY_PAYLOAD_SIZE, FALSE, NULL);
             /* Parse the error code */
             ERROR_parser(err);
 

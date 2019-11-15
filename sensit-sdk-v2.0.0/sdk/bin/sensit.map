@@ -1529,7 +1529,7 @@ LOAD C:/Users/lecom/IoT/hei-2019-2020-lab-sens-it-larghero-lecomte/sensit-sdk-v2
 .iplt           0x08005c90        0x0
  .iplt          0x08005c90        0x0 C:/Users/lecom/IoT/hei-2019-2020-lab-sens-it-larghero-lecomte/sensit-sdk-v2.0.0/sdk/obj/error.o
 
-.rodata         0x08005c90      0x3c8
+.rodata         0x08005c90      0x3cc
                 0x08005c90                . = ALIGN (0x4)
  *(.rodata)
  .rodata        0x08005c90       0x10 C:/Users/lecom/IoT/hei-2019-2020-lab-sens-it-larghero-lecomte/sensit-sdk-v2.0.0/sdk/lib\libSENSIT_SDK_V2.0.0.a(nvmem_api.o)
@@ -1547,50 +1547,50 @@ LOAD C:/Users/lecom/IoT/hei-2019-2020-lab-sens-it-larghero-lecomte/sensit-sdk-v2
  .rodata        0x08006014       0x40 c:/program files (x86)/gnu tools arm embedded/9 2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp\libgcc.a(mulsf3.o)
  *(.rodata*)
  .rodata.str1.1
-                0x08006054        0x3 C:/Users/lecom/IoT/hei-2019-2020-lab-sens-it-larghero-lecomte/sensit-sdk-v2.0.0/sdk/obj/main.o
-                0x08006058                . = ALIGN (0x4)
- *fill*         0x08006057        0x1 
+                0x08006054        0x5 C:/Users/lecom/IoT/hei-2019-2020-lab-sens-it-larghero-lecomte/sensit-sdk-v2.0.0/sdk/obj/main.o
+                0x0800605c                . = ALIGN (0x4)
+ *fill*         0x08006059        0x3 
 
-.rel.dyn        0x08006058        0x0
- .rel.iplt      0x08006058        0x0 C:/Users/lecom/IoT/hei-2019-2020-lab-sens-it-larghero-lecomte/sensit-sdk-v2.0.0/sdk/obj/error.o
+.rel.dyn        0x0800605c        0x0
+ .rel.iplt      0x0800605c        0x0 C:/Users/lecom/IoT/hei-2019-2020-lab-sens-it-larghero-lecomte/sensit-sdk-v2.0.0/sdk/obj/error.o
 
-.ARM.extab      0x08006058        0x0
-                0x08006058                . = ALIGN (0x4)
+.ARM.extab      0x0800605c        0x0
+                0x0800605c                . = ALIGN (0x4)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x08006058                . = ALIGN (0x4)
+                0x0800605c                . = ALIGN (0x4)
 
-.ARM            0x08006058        0x0
-                0x08006058                . = ALIGN (0x4)
-                0x08006058                __exidx_start = .
+.ARM            0x0800605c        0x0
+                0x0800605c                . = ALIGN (0x4)
+                0x0800605c                __exidx_start = .
  *(.ARM.exidx*)
-                0x08006058                __exidx_end = .
-                0x08006058                . = ALIGN (0x4)
+                0x0800605c                __exidx_end = .
+                0x0800605c                . = ALIGN (0x4)
 
-.preinit_array  0x08006058        0x0
-                0x08006058                . = ALIGN (0x4)
-                0x08006058                PROVIDE (__preinit_array_start = .)
+.preinit_array  0x0800605c        0x0
+                0x0800605c                . = ALIGN (0x4)
+                0x0800605c                PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x08006058                PROVIDE (__preinit_array_end = .)
-                0x08006058                . = ALIGN (0x4)
+                0x0800605c                PROVIDE (__preinit_array_end = .)
+                0x0800605c                . = ALIGN (0x4)
 
-.init_array     0x08006058        0x0
-                0x08006058                . = ALIGN (0x4)
-                0x08006058                PROVIDE (__init_array_start = .)
+.init_array     0x0800605c        0x0
+                0x0800605c                . = ALIGN (0x4)
+                0x0800605c                PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  *(.init_array*)
-                0x08006058                PROVIDE (__init_array_end = .)
-                0x08006058                . = ALIGN (0x4)
+                0x0800605c                PROVIDE (__init_array_end = .)
+                0x0800605c                . = ALIGN (0x4)
 
-.fini_array     0x08006058        0x0
-                0x08006058                . = ALIGN (0x4)
+.fini_array     0x0800605c        0x0
+                0x0800605c                . = ALIGN (0x4)
                 [!provide]                PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
                 [!provide]                PROVIDE (__fini_array_end = .)
-                0x08006058                . = ALIGN (0x4)
-                0x08006058                _sidata = LOADADDR (.data)
+                0x0800605c                . = ALIGN (0x4)
+                0x0800605c                _sidata = LOADADDR (.data)
 
-.data           0x20000000      0x1e8 load address 0x08006058
+.data           0x20000000      0x1e8 load address 0x0800605c
                 0x20000000                . = ALIGN (0x4)
                 0x20000000                _sdata = .
  *(.data)
@@ -1607,11 +1607,11 @@ LOAD C:/Users/lecom/IoT/hei-2019-2020-lab-sens-it-larghero-lecomte/sensit-sdk-v2
  *fill*         0x200001e7        0x1 
                 0x200001e8                _edata = .
 
-.igot.plt       0x200001e8        0x0 load address 0x08006240
+.igot.plt       0x200001e8        0x0 load address 0x08006244
  .igot.plt      0x200001e8        0x0 C:/Users/lecom/IoT/hei-2019-2020-lab-sens-it-larghero-lecomte/sensit-sdk-v2.0.0/sdk/obj/error.o
                 0x200001e8                . = ALIGN (0x4)
 
-.bss            0x200001e8      0x5d0 load address 0x08006240
+.bss            0x200001e8      0x5d0 load address 0x08006244
                 0x200001e8                _sbss = .
                 0x200001e8                __bss_start__ = _sbss
  *(.bss)
@@ -1662,7 +1662,7 @@ LOAD C:/Users/lecom/IoT/hei-2019-2020-lab-sens-it-larghero-lecomte/sensit-sdk-v2
                 0x200007b8                __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x200007b8      0x400 load address 0x08006240
+                0x200007b8      0x400 load address 0x08006244
                 0x200007b8                . = ALIGN (0x8)
                 [!provide]                PROVIDE (end = .)
                 [!provide]                PROVIDE (_end = .)
@@ -1858,7 +1858,7 @@ OUTPUT(C:/Users/lecom/IoT/hei-2019-2020-lab-sens-it-larghero-lecomte/sensit-sdk-
  .debug_ranges  0x000000f8       0x10 C:/Users/lecom/IoT/hei-2019-2020-lab-sens-it-larghero-lecomte/sensit-sdk-v2.0.0/sdk/obj/discovery.o
  .debug_ranges  0x00000108       0x10 C:/Users/lecom/IoT/hei-2019-2020-lab-sens-it-larghero-lecomte/sensit-sdk-v2.0.0/sdk/obj/main.o
 
-.debug_line     0x00000000     0x15b3
+.debug_line     0x00000000     0x15b1
  .debug_line    0x00000000      0x1d7 C:/Users/lecom/IoT/hei-2019-2020-lab-sens-it-larghero-lecomte/sensit-sdk-v2.0.0/sdk/obj/error.o
  .debug_line    0x000001d7      0x100 C:/Users/lecom/IoT/hei-2019-2020-lab-sens-it-larghero-lecomte/sensit-sdk-v2.0.0/sdk/obj/button.o
  .debug_line    0x000002d7      0x11d C:/Users/lecom/IoT/hei-2019-2020-lab-sens-it-larghero-lecomte/sensit-sdk-v2.0.0/sdk/obj/battery.o
@@ -1870,7 +1870,7 @@ OUTPUT(C:/Users/lecom/IoT/hei-2019-2020-lab-sens-it-larghero-lecomte/sensit-sdk-
  .debug_line    0x00000b88      0x27f C:/Users/lecom/IoT/hei-2019-2020-lab-sens-it-larghero-lecomte/sensit-sdk-v2.0.0/sdk/obj/ltr329.o
  .debug_line    0x00000e07      0x3b5 C:/Users/lecom/IoT/hei-2019-2020-lab-sens-it-larghero-lecomte/sensit-sdk-v2.0.0/sdk/obj/fxos8700.o
  .debug_line    0x000011bc      0x1e4 C:/Users/lecom/IoT/hei-2019-2020-lab-sens-it-larghero-lecomte/sensit-sdk-v2.0.0/sdk/obj/discovery.o
- .debug_line    0x000013a0      0x213 C:/Users/lecom/IoT/hei-2019-2020-lab-sens-it-larghero-lecomte/sensit-sdk-v2.0.0/sdk/obj/main.o
+ .debug_line    0x000013a0      0x211 C:/Users/lecom/IoT/hei-2019-2020-lab-sens-it-larghero-lecomte/sensit-sdk-v2.0.0/sdk/obj/main.o
 
 .debug_str      0x00000000      0xd14
  .debug_str     0x00000000      0x2f6 C:/Users/lecom/IoT/hei-2019-2020-lab-sens-it-larghero-lecomte/sensit-sdk-v2.0.0/sdk/obj/error.o
