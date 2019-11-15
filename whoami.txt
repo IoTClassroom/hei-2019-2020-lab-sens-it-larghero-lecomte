@@ -1,3 +1,4 @@
 Sens'it ID: vl-pl
+Use-case: 1 - Door movements
 Firstnames: victor-pierre
 Lastnames: lecomte-larghero
